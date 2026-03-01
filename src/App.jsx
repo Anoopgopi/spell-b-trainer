@@ -942,7 +942,7 @@ export default function App() {
                       value={rate}
                       onChange={(e) => setRate(Number(e.target.value))}
                       aria-label={`Speech rate: ${rate.toFixed(2)}`}
-                      style={{ width: 100 }}
+                      className="range-input"
                     />
                     <span className="range-value">{rate.toFixed(2)}×</span>
                   </div>
@@ -950,8 +950,7 @@ export default function App() {
                   <div className="range-group">
                     <span className="range-label">Repeat</span>
                     <input
-                      className="input"
-                      style={{ width: 60 }}
+                      className="input repeat-input"
                       type="number"
                       min="1"
                       max="5"
